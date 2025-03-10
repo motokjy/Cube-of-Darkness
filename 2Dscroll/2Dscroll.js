@@ -52,7 +52,7 @@ function nextstage(){
 //クリア後にステージセレクトに行くボタン
 function stageSelect1(){
     document.getElementById("clearbutton2").addEventListener("click",function(){
-        window.location.href=`Stage_Select.html`;
+        window.location.href=`../stage_select/Stage_Select.html`;
     })
 }
 
@@ -66,14 +66,14 @@ function nowstage(){
 //ゲームオーバー後にステージセレクトに行くボタン
 function stageSelect2(){
     document.getElementById("gameoverbutton2").addEventListener("click",function(){
-        window.location.href=`Stage_Select.html`;
+        window.location.href=`../stage_select/Stage_Select.html`;
     })
 }
 
 //すべてクリアしてタイトルへ
 function titlebutton(){
     document.getElementById("titlebutton").addEventListener("click",function(){
-        window.location.href=`Title.html`;
+        window.location.href=`../title/title.html`;
     })
 }
 
