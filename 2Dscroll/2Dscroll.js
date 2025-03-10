@@ -73,7 +73,7 @@ function stageSelect2(){
 //すべてクリアしてタイトルへ
 function titlebutton(){
     document.getElementById("titlebutton").addEventListener("click",function(){
-        window.location.href=`../title/title.html`;
+        window.location.href=`../index.html`;
     })
 }
 
