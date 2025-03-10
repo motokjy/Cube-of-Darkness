@@ -1,0 +1,64 @@
+@font-face{
+    font-family:'game';
+    src:url('KH-Dot-Kodenmachou-16.ttf') format('truetype');
+}
+
+html{
+    background-color: white;
+}
+
+#Stage_Select{
+    font-family:'game';
+    color: black;
+    text-align: center;
+    font-size: 80px;
+    margin-top: 150px;
+}
+
+.div1,.div2{
+    display: flex;
+}
+
+.div2{
+    margin-top: 80px;
+}
+
+#HoverArea1,#HoverArea2,#HoverArea3,#HoverArea4,#HoverArea5,
+#HoverArea6,#HoverArea7,#HoverArea8,#HoverArea9,#HoverArea10{
+    border-radius: 50%;
+    width: 230px;
+    height: 220px;
+    margin-left: 55px;
+    margin-right: 50px;
+    background-color: black;
+}
+
+#Returnbutton{
+    width: 120px;
+    height: 100px;
+    font-size:50px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+#HoverArea11{
+    background-color: black;
+    width: 120px;
+    height: 100px;
+    position: relative;  /* 今の位置を基準に */
+    bottom: 180px;  /* 下から180px */
+    left: 80px;  /* 左から80px */
+}
+
+#go_title{
+    opacity: 0;
+    font-size: 30px;
+    text-shadow: 5px 5px 3px #808080;
+    position: relative;  /* 今の位置を基準に */
+    top: 230px;  /* 上から230px */
+    left: 62px;  /* 左から62px */
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    visibility: hidden;
+}
