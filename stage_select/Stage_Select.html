@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "Stage_Select.css">
+    <link rel = "stylesheet" href = "button.css">
+    <link rel = "stylesheet" href = "Spot_Light.css">
+
+</head>
+<body>
+    
+    <div class = "spot">
+        <p id = "Stage_Select">ステージセレクト</p>
+
+        <div id = "HoverArea11">
+            <button id = "Returnbutton" onclick="location.href = 'Title.html'">←</button>
+        </div>
+
+        <p id = "go_title">Go To Title</p>
+
+        <div class = "div1">
+
+            <div id = 'HoverArea1'>
+                <button onclick="selectStage(0)" id = "button1">1</button>
+            </div>
+
+         <div id = 'HoverArea2'>
+                <button onclick="selectStage(1)" id = "button2">2</button>
+            </div>
+
+            <div id = 'HoverArea3'>
+                <button onclick="selectStage(2)" id = "button3">3</button>
+            </div>
+
+            <div id = 'HoverArea4'>
+                <button onclick="selectStage(3)" id = "button4">4</button>
+            </div>
+
+            <div id = 'HoverArea5'>
+                <button onclick="selectStage(4)" id = "button5">5</button>
+            </div>
+
+        </div>
+        <div class = "div2">
+
+            <div id = 'HoverArea6'>
+                <button onclick="selectStage(5)" id = "button6">6</button>
+            </div>
+
+            <div id = 'HoverArea7'>
+                <button onclick="selectStage(6)" id = "button7">7</button>
+            </div>
+
+            <div id = 'HoverArea8'>
+                <button onclick="selectStage(7)" id = "button8">8</button>
+            </div>
+
+            <div id = 'HoverArea9'>
+                <button onclick="selectStage(8)" id = "button9">9</button>
+            </div>
+
+            <div id = 'HoverArea10'>
+                <button onclick="selectStage(9)" id = "button10">10</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function selectStage(stageNumber){
+            window.location.href = `2Dscroll.html?stage=${stageNumber}`;
+        }
+    </script>
+    <script src = "Stage_Select.js" ></script>
+    <script src = "Spot_Light.js" ></script>
+</body>
+</html>
