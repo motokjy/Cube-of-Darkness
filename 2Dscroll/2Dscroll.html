@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>横スクロールアクション（仮）</title>
+    <link rel="stylesheet" href="2Dscroll.css">
+</head>
+<body>  
+        <canvas id="gameCanvas"></canvas>
+    <div id="clearbutton" style="display:none;">
+        <button id="clearbutton1" >次のステージ</button>
+        <button id="clearbutton2" >ステージセレクト</button>
+    </div>
+    <button id="titlebutton" style="display: none;">タイトル</button>
+    <div id="instruction">
+        <div id="instruction1">黄色い<span id="goalbox">■</span>のゴールを目指せ！</div>
+        <div id="instruction2">操作方法:A,Dで移動　スペースでジャンプ！</div>
+        <div id="instruction3">Wで玉を発射！足場を確認しよう！</div>
+        <div id="instruction4">Rでリセット詰んだらやり直そう！</div>
+    </div>
+    <div id="complete" style="display: none;">おめでとう！！全部クリア！！</div>
+    <div id="TimeUp" style="display:none;">
+        <p id = gameover>タイムアップ！</p>
+        <button id="gameoverbutton1" >リトライ</button>
+        <button id="gameoverbutton2" >ステージセレクト</button>
+    </div>
+    <div id="cooltime-container" style="display:none;">
+        <div id="cooltime-bar"></div>
+    </div>
+    <div id="star-container" style="display: none;"></div>
+    <div id="timerDisplay"></div>
+    <script src="GoalEffect.js"></script>
+    <script src="stage.js"></script>
+    <script src="2Dscroll.js"></script>
+    <script src="WebGAME.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
