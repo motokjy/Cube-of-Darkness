@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel = "stylesheet" href = "Stage_Select.css">
-    <link rel = "stylesheet" href = "button.css">
-    <link rel = "stylesheet" href = "Spot_Light.css">
+    <link rel = "stylesheet" href = "./Stage_Select.css">
+    <link rel = "stylesheet" href = "./button.css">
+    <link rel = "stylesheet" href = "../Spot_Light.css">
 
 </head>
 <body>
@@ -15,7 +15,7 @@
         <p id = "Stage_Select">ステージセレクト</p>
 
         <div id = "HoverArea11">
-            <button id = "Returnbutton" onclick="location.href = 'Title.html'">←</button>
+            <button id = "Returnbutton" onclick="location.href = '../title/index.html'">←</button>
         </div>
 
         <p id = "go_title">Go To Title</p>
@@ -69,10 +69,10 @@
 
     <script>
         function selectStage(stageNumber){
-            window.location.href = `2Dscroll.html?stage=${stageNumber}`;
+            window.location.href = `../2Dscroll/2Dscroll.html?stage=${stageNumber}`;
         }
     </script>
-    <script src = "Stage_Select.js" ></script>
-    <script src = "Spot_Light.js" ></script>
+    <script src = "./Stage_Select.js" ></script>
+    <script src = "../Spot_Light.js" ></script>
 </body>
 </html>
